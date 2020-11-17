@@ -1,39 +1,42 @@
 <div class="container-fluid">
-
-  <p class="h3 p-3">{{ conciertoDetail.banda }}</p>
-  <p class="h3 p-3">{{ conciertoDetail.date }}</p>
-  <div class="row">
-    <div class="col" style="padding-right: 0px">
-      <div class="thumb">
+  <table>
+    <td>
+      <div class="container-fluid">
         <img
           class="img-fluid"
           src="{{ conciertoDetail.image }}"
           style="width: 80px"
         />
       </div>
-    </div>
-  </div>
-   <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Tipo</th>
-      <th scope="col">Cantidad</th>
-      <th scope="col">Precio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">General</th>
-      <td><dd *ngFor="let a of conciertoDetail.generales">{{ a.cantidad }}</dd></td>
-      <td><dd *ngFor="let a of conciertoDetail.generales">{{ a.precio }}</dd></td>
-    </tr>
-    <tr>
-      <th scope="row">Platino</th>
-      <td><dd *ngFor="let a of conciertoDetail.platinos">{{ a.cantidad }}</dd></td>
-      <td><dd *ngFor="let a of conciertoDetail.platinos">{{ a.precio }}</dd></td>
-    </tr>
-  </tbody>
-</table>
+    </td>
+    <td>
+      <p class="h3 p-3">{{ conciertoDetail.band }}</p>
+      <p class="h3 p-3">{{ conciertoDetail.date }}</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">General</th>
+            <td>{{conciertoDetail.general.quantity}} </td>
+            <td>{{conciertoDetail.general.price }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Platino</th>
+            <td>{{conciertoDetail.platino.quantity}}</td>
+            <td>{{conciertoDetail.platino.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </table>
+
+
 
 
 

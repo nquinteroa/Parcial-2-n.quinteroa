@@ -15,7 +15,7 @@ describe('Service: Concierto', () => {
   beforeEach(() => {
     let service: ConciertoService;
     let httpMock: HttpTestingController;
-    let apiUrl = environment.baseUrl + "conciertos";
+    let apiUrl = environment.baseUrl;
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       providers: [ConciertoService]

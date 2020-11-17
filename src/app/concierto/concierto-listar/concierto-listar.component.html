@@ -4,7 +4,7 @@
     <thead>
     </thead>
     <tbody>
-      <tr *ngFor="let c of conciertos">
+      <td *ngFor="let c of conciertos">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src={{c.image}} alt="Card image cap">
           <div class="card-body">
@@ -12,11 +12,15 @@
             <p class="card-text">{{c.date}}</p>
             <a href="#" class="btn btn-primary"(click)="onSelected(c)">Ver Detalle</a>
           </div>
-          <div *ngIf="selected">
-            <app-concierto-detalle [conciertoDetail]="conciertoSeleccionado"></app-paseador-detalle>
-          </div>
-    </tr>
+        </div>
+      </td>
     </tbody>
   </table>
+  <div class="col" >
+    <h2 style="font-weight: bold; padding-bottom: 5px">Detalle del Concierto</h2>
+  <div *ngIf="selected">
+    <app-concierto-detalle [conciertoDetail]="conciertoSeleccionado"></app-concierto-detalle>
+  </div>
+  </div>
 
 

@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ConciertoService {
 
-  apiUrl = environment.baseUrl +'conciertos';
+private apiUrl = environment.baseUrl;
 constructor(private http: HttpClient) { }
 
  getConciertos():Observable<Concierto[]>{
