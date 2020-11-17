@@ -31,8 +31,20 @@
             <td>{{conciertoDetail.platino.quantity}}</td>
             <td>{{conciertoDetail.platino.price}}</td>
           </tr>
+          <tr>
+            <th scope="row">Platino</th>
+            <td>{{conciertoDetail.platino.quantity}}</td>
+            <td>{{conciertoDetail.platino.price}}</td>
+          </tr>
+
         </tbody>
       </table>
+    </td>
+    <td>
+      <div class="col">
+        <dt>id de los Sponsor</dt>
+        <ul *ngFor="let a of conciertoDetail.sponsors">{{ a.id }} </ul>
+      </div>
     </td>
   </table>
 

@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 export const environment = {
   production: false,
-  baseUrl:'https://gist.githubusercontent.com/CesarF/24a0d07afa64532a0ee72b32f554ed8f/raw/70b38a824e1d03eaf697a8c49daf3ee154c4bd1e/concerts.json'
+  baseUrl:'https://gist.githubusercontent.com/CesarF/24a0d07afa64532a0ee72b32f554ed8f/raw/603cf21c6742727cfcd6e1379caf8566dc9b4013/sponsors.json'
 };
 
 /*

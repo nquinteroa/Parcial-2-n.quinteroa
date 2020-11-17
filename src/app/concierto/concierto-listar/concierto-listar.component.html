@@ -20,7 +20,13 @@
     <h2 style="font-weight: bold; padding-bottom: 5px">Detalle del Concierto</h2>
   <div *ngIf="selected">
     <app-concierto-detalle [conciertoDetail]="conciertoSeleccionado"></app-concierto-detalle>
+    <app-sponsor-detalle [sponsorDetail]="sponsorSeleccionado"></app-sponsor-detalle>
   </div>
+  <div class="col" >
+    <h2 style="font-weight: bold; padding-bottom: 5px">Detalle del Sponsor</h2>
+    <div *ngIf="selected">
+      <app-sponsor-detalle [sponsorDetail]="sponsorSeleccionado"></app-sponsor-detalle>
+    </div>
   </div>
 
 
